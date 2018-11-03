@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "HammingCalculator.App/1.0.0": {
+        "dependencies": {
+          "HammingCalculator.Lib": "1.0.0"
+        },
+        "runtime": {
+          "HammingCalculator.App.dll": {}
+        }
+      },
+      "HammingCalculator.Lib/1.0.0": {
+        "runtime": {
+          "HammingCalculator.Lib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HammingCalculator.App/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HammingCalculator.Lib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
