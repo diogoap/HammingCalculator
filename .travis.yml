@@ -1,2 +1,6 @@
 language: csharp
-solution: HammingCalculator.sln
+mono: none
+dotnet: 2.1.300
+script:
+  - dotnet restore
+  - dotnet build HammingCalculator.sln
