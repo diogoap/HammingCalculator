@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy /y &quot;$(TargetDir)*.*&quot; &quot;$(SolutionDir)\Program\&quot;" />
+    <Exec Command="xcopy /y $(TargetDir)*.* $(SolutionDir)\Program\" />
   </Target>
 
 </Project>
