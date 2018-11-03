@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="if $(ConfigurationName) == Debug xcopy /y &quot;$(TargetDir)*.*&quot; &quot;$(SolutionDir)\Program&quot;" />
+    <Exec Command="if $(ConfigurationName) == Debug xcopy /y $(TargetDir)*.* $(SolutionDir)\Program" />
   </Target>
 
 </Project>
