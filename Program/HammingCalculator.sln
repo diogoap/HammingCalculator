@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HammingCalculator.Lib", "HammingCalculator.Lib\HammingCalculator.Lib.csproj", "{FFC8CCDC-E642-438D-9086-6C16824104FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HammingCalculator.Lib", "HammingCalculator.Lib\HammingCalculator.Lib.csproj", "{FFC8CCDC-E642-438D-9086-6C16824104FC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HammingCalculator.Lib.Tests", "HammingCalculator.Lib.Tests\HammingCalculator.Lib.Tests.csproj", "{296277BF-090F-4BAC-BE0D-F7A0EADDE4F4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HammingCalculator.Lib.Tests", "HammingCalculator.Lib.Tests\HammingCalculator.Lib.Tests.csproj", "{296277BF-090F-4BAC-BE0D-F7A0EADDE4F4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HammingCalculator.App", "HammingCalculator.App\HammingCalculator.App.csproj", "{5C5C16D8-3AEB-4752-A30B-2E0F16B28CD8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HammingCalculator.App", "HammingCalculator.App\HammingCalculator.App.csproj", "{5C5C16D8-3AEB-4752-A30B-2E0F16B28CD8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HammingCalculator.App.Integration.Tests", "HammingCalculator.App.Integration.Tests\HammingCalculator.App.Integration.Tests.csproj", "{CDF2CC28-5FBB-4335-9904-92C626B4BE44}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HammingCalculator.App.Integration.Tests", "HammingCalculator.App.Integration.Tests\HammingCalculator.App.Integration.Tests.csproj", "{CDF2CC28-5FBB-4335-9904-92C626B4BE44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
