@@ -19,9 +19,9 @@ namespace HammingCalculator.Lib.Tests
         }
 
         [TestMethod]
-        [DataRow(HammingDistanceCalculatorStrategies.Standard, typeof(HammingDistanceCalculatorStandard))]
-        [DataRow(HammingDistanceCalculatorStrategies.Parallel, typeof(HammingDistanceCalculatorParallel))]
-        public void CreateInstanceShouldReturnInstanceOfExpectedType(HammingDistanceCalculatorStrategies strategy, Type expectedType)
+        [DataRow(HammingDistanceStrategies.Standard, typeof(HammingDistanceCalculatorStandard))]
+        [DataRow(HammingDistanceStrategies.Parallel, typeof(HammingDistanceCalculatorParallel))]
+        public void CreateInstanceShouldReturnInstanceOfExpectedType(HammingDistanceStrategies strategy, Type expectedType)
         {
             // Act
             var result = HammingDistanceCalculatorFactory.CreateInstance(strategy);

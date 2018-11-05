@@ -38,7 +38,7 @@ namespace HammingCalculator.Lib.Tests
             var input1 = new byte[1_000_000_000];
             var input2 = new byte[1_000_000_000];
 
-            // Inverting some bit's value...
+            // Inverting some bit's values...
             input1[5] ^= 1;
             input1[50] ^= 1;
             input1[500] ^= 1;
