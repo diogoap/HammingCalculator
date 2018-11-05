@@ -4,7 +4,7 @@
 
 This program calculates the Hamming Distance for 2 binary inputs.
 
-Solutin is integrated with TravisCI to allow Continuous Integation.
+Solution is integrated with TravisCI to allow Continuous Integation.
 
 Arguments expected:
 
@@ -17,15 +17,15 @@ Arguments expected:
 		 - Values must be two valid file names. Example: "C:\file.txt".
 		 - File contents must be equal size.
             
-2. Method of caculation: argument name is **-method**
+2. Method of calculation: argument name is **-method**
 	 - Optional
 	 - Value should be:
 		 - Standard: to select default calculation method.
-		 - Parallel: to perform the calculation with paralelism. Should be used in large amounts of data.
+		 - Parallel: to perform the calculation with parallelism. Should be used in large amounts of data.
 
-## Usage instructons
+## Usage instructions
 
-To call the program, specify the data source and provide two strings containg either inline data or file names where data will be read from. For example:
+To call the program, specify the data source and provide two strings containing either inline data or file names where data will be read from. For example:
 
 ```bat
 dotnet HammingCalculator.App.dll -inline 0011 1101
@@ -33,7 +33,7 @@ dotnet HammingCalculator.App.dll -inline 0011 1101
 ```bat
 dotnet HammingCalculator.App.dll -file "C:\temp\file1.txt" "C:\temp\file2.txt"
 ```
-Also, the calculation method can be specified. For exemple:
+Also, the calculation method can be specified. For example:
 ```bat
 dotnet HammingCalculator.App.dll -file "C:\temp\file1.txt" "C:\temp\file2.txt" -method Parallel
 ```
@@ -47,7 +47,7 @@ If **-method** argument is not provided, Standard method is considered.
 The program provides an alternative approach to calculate the Hamming Distance for large amounts of data. When used, this approach split the data into small chunks and process each part simultaneously through .Net Parallel library.
 
 Using Parallel, the calculation is executed about 75% faster than the regular method, or even more. 
-Here is a comparison of two calculation methods. First, lets use the Standard method:
+Here is a comparison of two calculation methods. First, let's use the Standard method:
 
 ```bat
 dotnet HammingCalculator.App.dll -file "C:\temp\file1.txt" "C:\temp\file2.txt" -method Standard
