@@ -25,7 +25,7 @@ The program expects the following arguments:
 
 ## Usage instructions
 
-To call the program, specify the data source and provide two strings containing either inline data or file names where data will be read from. For example:
+To call the program, specify the data source and provide two strings containing either inline data or the file names where data will be read from. For example:
 
 ```bat
 dotnet HammingCalculator.App.dll -inline 0011 1101
