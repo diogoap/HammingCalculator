@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/diogoap82/HammingCalculator.svg?branch=master)](https://travis-ci.org/diogoap82/HammingCalculator)
 
-# HammingCalculator
+# Hamming Calculator
 
 This program calculates the Hamming Distance for 2 binary inputs.
 
