@@ -4,6 +4,8 @@
 
 This program calculates the Hamming Distance for 2 binary inputs.
 
+Solutin is integrated with TravisCI to allow Continuous Integation.
+
 Arguments expected:
 
 1. Data source: argument name must be either **-inline** or **-file**
@@ -44,8 +46,8 @@ If **-method** argument is not provided, Standard method is considered.
 
 The program provides an alternative approach to calculate the Hamming Distance for large amounts of data. When used, this approach split the data into small chunks and process each part simultaneously through .Net Parallel library.
 
-Using Parallel, the calculation is executed about 75% faster than the regular method. 
-Here is a comparison of two calculation methods in 
+Using Parallel, the calculation is executed about 75% faster than the regular method, or even more. 
+Here is a comparison of two calculation methods. First, lets use the Standard method:
 
 ```bat
 dotnet HammingCalculator.App.dll -file "C:\temp\file1.txt" "C:\temp\file2.txt" -method Standard
@@ -58,7 +60,8 @@ Hamming distance for the provided inputs is 5.
 
 Elapsed Milliseconds: 410
 ```
-Now the Parallel execution:
+
+Now the Parallel execution method:
 ```bat
 
 dotnet HammingCalculator.App.dll -file "C:\temp\file1.txt" "C:\temp\file2.txt" -method Parallel
@@ -72,7 +75,11 @@ Hamming distance for the provided inputs is 5.
 Elapsed Milliseconds: 216
 ```
 
+Standard method took 410 ms and Parallel method ran in 216 ms.
+
 ## Improvements
 
-As a suggestions for future improvemnts 
-Container DI to instantiate the strategy
+Here are some suggestions for future improvements: 
+- Usage of a DI Container to instantiate an IHammingDistanceCalculatorStrategy class instead of using a factory. This change would make the maintenance simpler.
+- Adopt a 3rd library to parse the program arguments. Currently, ProgramOptions class is responsible for this task. However, using some 3rd library would bring more capabilities and remove this concern of the application.
+- Expand CI capabilities by adding an automatic deployment into CI pipeline.
