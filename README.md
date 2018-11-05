@@ -47,7 +47,7 @@ If **-method** argument is not provided, Standard method is considered.
 The program provides an alternative approach to calculate the Hamming Distance for large amounts of data. When used, this approach split the data into small chunks and process each part simultaneously through .Net Parallel library.
 
 Using Parallel, the calculation is executed about 75% faster than the regular method, or even more. 
-Here is a comparison of two calculation methods. First, let's use the Standard method:
+Here is a comparison of two calculation methods, processing files with 91,8 MB. First, let's use the Standard method:
 
 ```bat
 dotnet HammingCalculator.App.dll -file "C:\temp\file1.txt" "C:\temp\file2.txt" -method Standard
