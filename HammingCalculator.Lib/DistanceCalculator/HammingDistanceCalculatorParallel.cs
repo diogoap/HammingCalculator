@@ -5,7 +5,7 @@ namespace HammingCalculator.Lib.DistanceCalculator
     /// <summary>
     /// Calculates the Hamming Distance of two arrays of bytes.
     /// Calculation is performed in a parallel mode, which means the data is split into small chunks of data.
-    /// Then each chunk is processed in different threads to use more than one processor and runs faster.
+    /// Then each chunk is processed in different threads to use more than one processor and run faster.
     /// The complexity is O(n) since the execution time is proportional to the array's size.
     /// However, the more processors and cores are available, lesser will be the total execution time.
     /// </summary>

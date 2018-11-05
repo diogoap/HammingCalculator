@@ -24,7 +24,7 @@ namespace HammingCalculator.App
         /// Default constructor.
         /// Initializes all arguments values, populating the public fields with data parsed from arguments list.
         /// </summary>
-        /// <param name="args"></param>
+        /// <param name="args">Program arguments</param>
         public ProgramOptions(string[] args)
         {
             _args = args;

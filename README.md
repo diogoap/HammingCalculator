@@ -4,9 +4,9 @@
 
 This program calculates the Hamming Distance for 2 binary inputs.
 
-Solution is integrated with TravisCI to allow Continuous Integation.
+Solution is written in C# targeting .NET Core 2.1. Source code is integrated with TravisCI to allow Continuous Integration.
 
-Arguments expected:
+The program expects the following arguments:
 
 1. Data source: argument name must be either **-inline** or **-file**
 	 - 2 values are required
